@@ -10,17 +10,16 @@ export default function FirstPost() {
         <Link href="/">Back to home</Link>
       </h2>
       <div>
-      <Image
-        //src="/static/images/id_photo.jpg"
-        //src={mypic}
-        src="/id_photo.jpg"
-        alt="Picture of pranab"
-        width={350}
-        height={450}
-        //layout="fixed" // layout="fill", layout="intrinsic" 
-      />
-    </div>
+        <Image
+          //src="/static/images/id_photo.jpg"
+          //src={mypic}
+          src="/contracts/id_photo.jpg"
+          alt="Picture of pranab"
+          width={350}
+          height={450}
+          //layout="fixed" // layout="fill", layout="intrinsic"
+        />
+      </div>
     </>
   );
 }
-

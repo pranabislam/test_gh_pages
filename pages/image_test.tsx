@@ -7,7 +7,7 @@ export default function FirstPost() {
     <>
       <h1>Seeing image</h1>
       <h2>
-        <Link href="/">Back to home</Link>
+        <Link href="/test_gh_pages">Back to home</Link>
       </h2>
       <div>
         <Image

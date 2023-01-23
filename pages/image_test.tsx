@@ -13,7 +13,8 @@ export default function FirstPost() {
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/id_photo.jpg"
+          //src="/contracts/id_photo.jpg"
+          src="/id_photo.jpg"
           alt="Picture of pranab"
           width={350}
           height={450}

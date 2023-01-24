@@ -24,7 +24,7 @@ export default function FirstPost() {
           //layout="fixed" // layout="fill", layout="intrinsic"
         />
       </div>
-      {/* <div>
+      <div>
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
@@ -43,7 +43,7 @@ export default function FirstPost() {
           height={350}
           //layout="fixed" // layout="fill", layout="intrinsic"
         />
-      </div> */}
+      </div>
     </>
   );
 }

@@ -7,7 +7,7 @@ export default function FirstPost() {
     <>
       <h1>Seeing image</h1>
       <h2>
-        <Link href="/">Back to home</Link>
+        <Link href="/test_gh_pages">Back to home</Link>
       </h2>
       <h2>
         <Link href="/contracts_main">Contract images page</Link>
@@ -16,7 +16,8 @@ export default function FirstPost() {
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/id_photo.jpg"
+          //src="/contracts/id_photo.jpg"
+          src="/id_photo.jpg"
           alt="Picture of pranab"
           width={350}
           height={450}

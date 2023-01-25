@@ -15,7 +15,7 @@ export default function FirstPost() {
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/id_photo.jpg"
+          src="id_photo.jpg"
           alt="Picture of pranab"
           width={350}
           height={450}
@@ -26,7 +26,7 @@ export default function FirstPost() {
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/IMG_3402.JPG"
+          src="IMG_3402.JPG"
           alt="Picture of rohith"
           width={550}
           height={450}
@@ -35,7 +35,7 @@ export default function FirstPost() {
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/drawisland.png"
+          src="drawisland.png"
           alt="Picture of intiials"
           width={350}
           height={350}

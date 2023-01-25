@@ -15,8 +15,8 @@ export default function FirstPost() {
         <Image
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/id_photo.jpg"
-          alt="Picture of pranab"
+          src="https://images.unsplash.com/photo-1674585639691-19872899cc0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80"
+          alt="Picture of Germany"
           width={350}
           height={450}
           //layout="fixed" // layout="fill", layout="intrinsic"

@@ -18,6 +18,10 @@ const Home: NextPage = () => {
           View contracts <Link href="/image_test">here!</Link>
         </h1>
 
+        <h1 className={styles.title}>
+          See image scroller <Link href="/image_scroll">here!</Link>
+        </h1>
+
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
         </p>

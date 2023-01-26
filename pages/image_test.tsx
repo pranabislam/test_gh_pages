@@ -12,36 +12,46 @@ export default function FirstPost() {
         <Link href="/contracts_main">Contract images page</Link>
       </h2>
       <div>
-        <Image
+        <img
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="https://images.unsplash.com/photo-1674585639691-19872899cc0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80"
-          alt="Picture of Germany"
+          src="https://lh3.googleusercontent.com/4aIVkiBsOVEEGyVVp9YA1U11dhqfMDpZah7IXmkWDtwNbxHETH2hWUitzJZkrhVwyDA"
+          //alt="Picture of Germany"
           width={350}
           height={450}
           //layout="fixed" // layout="fill", layout="intrinsic"
         />
       </div>
       <div>
-        <Image
+        <img
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/IMG_3402.JPG"
-          alt="Picture of rohith"
-          width={550}
+          src="https://lh4.googleusercontent.com/W2tJUUbxwYjZM1Wwab40lk7TvCrzJ5ykaHiLjThEq1O5nPBZmr5uRjpbxmiXsttEhb8"
+          //alt="Picture of Germany"
+          width={350}
           height={450}
           //layout="fixed" // layout="fill", layout="intrinsic"
         />
-        <Image
+      </div>
+      <div>
+        <img
           //src="/static/images/id_photo.jpg"
           //src={mypic}
-          src="/contracts/drawisland.png"
-          alt="Picture of intiials"
+          src="https://lh6.googleusercontent.com/TFdYHWvpyzdjfXY59duuwznZkSXd-SmhBy_FIGqVVJ9_tovJnWSzmjR_k_8rMM3b3hM"
+          //alt="Picture of Germany"
           width={350}
-          height={350}
+          height={450}
           //layout="fixed" // layout="fill", layout="intrinsic"
         />
       </div>
     </>
   );
 }
+/*
+images = ["https://lh5.googleusercontent.com/Eagp90W4tmxupnVYl8eTwhEyGaHdInWJntnJINh0GbjghXKn3mSDlofW6JtusKhGHA4",
+          "https://lh4.googleusercontent.com/W2tJUUbxwYjZM1Wwab40lk7TvCrzJ5ykaHiLjThEq1O5nPBZmr5uRjpbxmiXsttEhb8",
+          "https://lh6.googleusercontent.com/TFdYHWvpyzdjfXY59duuwznZkSXd-SmhBy_FIGqVVJ9_tovJnWSzmjR_k_8rMM3b3hM",
+          "https://lh4.googleusercontent.com/rMYz43NH18f23A-nuacQwXh6ClfRPUAYIY-BKwm1YrOaNyvDga8tXJJRMoDYu28Jkx0",
+          "https://lh3.googleusercontent.com/4aIVkiBsOVEEGyVVp9YA1U11dhqfMDpZah7IXmkWDtwNbxHETH2hWUitzJZkrhVwyDA"
+        ]
+*/

@@ -9,8 +9,9 @@ export default function FirstPost() {
         <Link href="/test_gh_pages">Back to home</Link>
       </h2>
       <h2>
-        <Link href="/contracts_main">Contract images page</Link>
+        <Link href="/contracts_list">Contract images page</Link>
       </h2>
+
       <div>
         <img
           //src="/static/images/id_photo.jpg"

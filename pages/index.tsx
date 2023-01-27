@@ -15,44 +15,41 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          View contracts <Link href="/image_test">here!</Link>
+          View contracts <Link href="/contracts_list">here!</Link>
         </h1>
 
         <h1 className={styles.title}>
-          See image scroller <Link href="/image_scroll">here!</Link>
+          See image scroller <Link href="/image_scroll_200">here!</Link>
         </h1>
 
         <p className={styles.description}>
-          An NYU and Columbia Research Collaboration to advance the state of the art in open source legal NLP work
+          An NYU and Columbia Research Collaboration to advance the state of the art in open source
+          legal NLP work
         </p>
 
         <div className={styles.grid}>
-          <Link href="/image_test">
-            <div  className={styles.card} style={{cursor: 'pointer'}}>
+          <Link href="/contracts_list">
+            <div className={styles.card} style={{ cursor: 'pointer' }}>
               <h2>See all labeled contracts &rarr;</h2>
               <p>We labeled all contracts with tables of contents</p>
             </div>
           </Link>
 
-
           <Link href="/image_test">
-            <div  className={styles.card} style={{cursor: 'pointer'}}>
+            <div className={styles.card} style={{ cursor: 'pointer' }}>
               <h2>What we are trying to accomplish &rarr;</h2>
               <p>Advancing the state of the art in legal NLP and vision</p>
             </div>
           </Link>
 
           <Link href="/image_test">
-            <div  className={styles.card} style={{cursor: 'pointer'}}>
+            <div className={styles.card} style={{ cursor: 'pointer' }}>
               <h2>About us &rarr;</h2>
               <p>Learn about our backgrounds as researchers</p>
             </div>
           </Link>
 
-          <a
-            href="https://github.com/mumose/contract_labeling_with_TOC"
-            className={styles.card}
-          >
+          <a href="https://github.com/mumose/contract_labeling_with_TOC" className={styles.card}>
             <h2>Our Github &rarr;</h2>
             <p>Code to help you label and visualize section titles</p>
           </a>

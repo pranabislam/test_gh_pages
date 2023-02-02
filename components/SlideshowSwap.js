@@ -55,7 +55,7 @@ class SlideshowSwap extends React.Component {
         return (
             <div className="m-10">
                 <h1 className="text-center text-6xl  font-bold pb-10 ">
-                    Contract_1 <span className="text-indigo-600">Filler here</span>
+                    Click on the image <span className="text-indigo-600">to see them change</span>
                 </h1>
 
                 <Zoom {...this.zoomInProperties}>

@@ -5,7 +5,7 @@ import SlideshowSwap from "../components/SlideshowSwap";
 function HerosectionNew() {
 	let unlabeledImagesEx = [
 		"https://upload.wikimedia.org/wikipedia/commons/b/bd/Color_icon_blue.svg",
-		"https://www.iconsdb.com/icons/preview/blue/triangle-xxl.png",
+		"https://upload.wikimedia.org/wikipedia/commons/8/8a/White_blue_triangle.svg",
 		"https://www.iconsdb.com/icons/preview/blue/circle-xxl.png"
 	];
 	let labeledImagesEx = [

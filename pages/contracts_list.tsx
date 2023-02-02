@@ -38,7 +38,7 @@ export default function ListContracts() {
       width: 100,
       height: 75,
       tags: [
-        { value: <Link href="/image_scroll_200">View Contract</Link>, title: 'View Contract' },
+        { value: <Link href="/image_scroll_200.js">View Contract</Link>, title: 'View Contract' },
       ],
     },
     {
@@ -46,7 +46,7 @@ export default function ListContracts() {
       width: 100,
       height: 75,
       tags: [
-        { value: <Link href="/image_scroll_308">View Contract</Link>, title: 'View Contract' },
+        { value: <Link href="./image_scroll_308.js">View Contract</Link>, title: 'View Contract' },
       ],
     },
     {
@@ -54,7 +54,7 @@ export default function ListContracts() {
       width: 100,
       height: 75,
       tags: [
-        { value: <Link href="/image_scroll_327">View Contract</Link>, title: 'View Contract' },
+        { value: <Link href="./image_scroll_327">View Contract</Link>, title: 'View Contract' },
       ],
     },
     {
@@ -62,7 +62,7 @@ export default function ListContracts() {
       width: 100,
       height: 75,
       tags: [
-        { value: <Link href="/image_scroll_345">View Contract</Link>, title: 'View Contract' },
+        { value: <Link href="./image_scroll_345">View Contract</Link>, title: 'View Contract' },
       ],
     },
     {
@@ -70,7 +70,7 @@ export default function ListContracts() {
       width: 100,
       height: 75,
       tags: [
-        { value: <Link href="/image_scroll_353">View Contract</Link>, title: 'View Contract' },
+        { value: <Link href="./image_scroll_353">View Contract</Link>, title: 'View Contract' },
       ],
     },
     {
@@ -78,7 +78,7 @@ export default function ListContracts() {
       width: 100,
       height: 75,
       tags: [
-        { value: <Link href="/image_scroll_506">View Contract</Link>, title: 'View Contract' },
+        { value: <Link href="./image_scroll_506">View Contract</Link>, title: 'View Contract' },
       ],
     },
   ];

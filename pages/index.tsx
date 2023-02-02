@@ -35,7 +35,7 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
-          <Link href="/image_test">
+          <Link href="/image_scroll_test">
             <div className={styles.card} style={{ cursor: 'pointer' }}>
               <h2>What we are trying to accomplish &rarr;</h2>
               <p>Advancing the state of the art in legal NLP and vision</p>

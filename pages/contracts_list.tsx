@@ -1,55 +1,40 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Gallery } from 'react-grid-gallery';
+import validPageNumbers from '../public/ct_id_valid_page_numbers.json';
+
+export const URLListBuilder = (root_url: string, ct_id: string, pages: string[]) => {
+  let out: string[] = [];
+  for (var page_num of pages) {
+    out.push(root_url + ct_id + '_' + page_num + '.jpg');
+  }
+  return out;
+};
+
+export const s3_root_dir =
+  'https://multimodal-contract-segmentation-contracts-bucket.s3.amazonaws.com/cuad_imgs_labeled/';
 
 export default function ListContracts() {
   let labelled_img_urls: Map<string, Array<string>> = new Map<string, Array<string>>();
-  const s3_root_dir =
-    'https://multimodal-contract-segmentation-contracts-bucket.s3.amazonaws.com/cuad_imgs_labeled/';
-  const ct_id_list = ['ct_200', 'ct_308']; //, 'ct_308', 'ct_353', 'ct_345', 'ct_327', 'ct_506'];
+  const ct_id_list = ['ct_200', 'ct_308', 'ct_308', 'ct_353', 'ct_345', 'ct_327', 'ct_506'];
+  let urlList_200 = URLListBuilder(s3_root_dir, 'ct_200', validPageNumbers['ct_200']);
+  let urlList_308 = URLListBuilder(s3_root_dir, 'ct_308', validPageNumbers['ct_308']);
+  let urlList_327 = URLListBuilder(s3_root_dir, 'ct_327', validPageNumbers['ct_327']);
+  let urlList_345 = URLListBuilder(s3_root_dir, 'ct_345', validPageNumbers['ct_345']);
+  let urlList_353 = URLListBuilder(s3_root_dir, 'ct_353', validPageNumbers['ct_353']);
+  let urlList_506 = URLListBuilder(s3_root_dir, 'ct_506', validPageNumbers['ct_506']);
 
-  for (var ct of ct_id_list) {
-    console.log(ct);
-    labelled_img_urls.set(ct, []);
-
-    for (let i = 1; i < 75; i++) {
-      let img_url = s3_root_dir + ct + '_' + i + '.jpg';
-
-      try {
-        labelled_img_urls.get(ct)?.push(img_url);
-      } catch (err) {
-        console.log(err);
-      }
-    }
-  }
-  console.log(labelled_img_urls);
-  // //Todo: ITERATIVELY LOAD MULTIPLE CONTRACTS.
-  // //Complete this code to replace below.
-  // const gallery_test: {
-  //   src: string;
-  //   width: number;
-  //   height: number;
-  //   isSelected: boolean;
-  //   caption: string;
-  //   thumbnailCaption: string;
-  //   onClick: () => void;
-  // }[] = [];
-  // labelled_img_urls.forEach((imgs, ct_id) => {
-  //   gallery_test.push({
-  //     src: imgs[62],
-  //     width: 320,
-  //     height: 212,
-  //     isSelected: true,
-  //     caption: 'View Contract',
-  //     thumbnailCaption: 'Contract ' + ct_id,
-  //     onClick: () => {
-  //       console.log('Test');
-  //     },
-  //   });
-  // });
-  let gallery_test = [
+  let gallery_test: {
+    src: string;
+    width: number;
+    height: number;
+    tags: {
+      value: JSX.Element;
+      title: string;
+    }[];
+  }[] = [
     {
-      src: 'https://multimodal-contract-segmentation-contracts-bucket.s3.amazonaws.com/cuad_imgs_labeled/ct_200_54.jpg',
+      src: urlList_200[0],
       width: 100,
       height: 75,
       tags: [
@@ -57,11 +42,43 @@ export default function ListContracts() {
       ],
     },
     {
-      src: 'https://multimodal-contract-segmentation-contracts-bucket.s3.amazonaws.com/cuad_imgs_labeled/ct_308_19.jpg',
+      src: urlList_308[0],
       width: 100,
       height: 75,
       tags: [
         { value: <Link href="/image_scroll_308">View Contract</Link>, title: 'View Contract' },
+      ],
+    },
+    {
+      src: urlList_327[0],
+      width: 100,
+      height: 75,
+      tags: [
+        { value: <Link href="/image_scroll_327">View Contract</Link>, title: 'View Contract' },
+      ],
+    },
+    {
+      src: urlList_345[0],
+      width: 100,
+      height: 75,
+      tags: [
+        { value: <Link href="/image_scroll_345">View Contract</Link>, title: 'View Contract' },
+      ],
+    },
+    {
+      src: urlList_353[0],
+      width: 100,
+      height: 75,
+      tags: [
+        { value: <Link href="/image_scroll_353">View Contract</Link>, title: 'View Contract' },
+      ],
+    },
+    {
+      src: urlList_506[0],
+      width: 100,
+      height: 75,
+      tags: [
+        { value: <Link href="/image_scroll_506">View Contract</Link>, title: 'View Contract' },
       ],
     },
   ];
@@ -71,9 +88,7 @@ export default function ListContracts() {
       <h2>
         <Link href="/test_gh_pages">Back to home</Link>
       </h2>
-      <h2>
-        <Link href="/image_test">Image test page</Link>
-      </h2>
+
       <Gallery images={gallery_test}></Gallery>
     </>
   );
